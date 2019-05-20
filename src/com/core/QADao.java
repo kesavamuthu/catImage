@@ -1,21 +1,24 @@
 package com.core;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 
 public class QADao {
 	
-	public static void dataSaver(BeanAnswers ba){
-		String driver = "oracle.jdbc.driver.OracleDriver";
-		String username = "TRAINING_DB";
-		String password = "laps";
-		String connectionurl = "jdbc:oracle:thin:@192.168.0.5:1521:ORCL";
+	public static void dataSaver(BeanAnswers ba, Connection con){
 		try{
-			Class.forName(driver);
-			Connection con = DriverManager.getConnection(connectionurl, username, password);
-			PreparedStatement ps = con.prepareStatement("")
-		}
 			
+			PreparedStatement ps = con.prepareStatement("insert into answerforsurveydetails values(?, ?, ?)");
+			System.out.println("hai");
+			System.out.println(ba.getEmployeeId());
+			System.out.println(ba.getFirst());
+			System.out.println(ba.getSecond());
+			System.out.println(ba.getThird());
+		}
+		catch(Exception e)
+		{
+			
+		}
 			
 	}
 

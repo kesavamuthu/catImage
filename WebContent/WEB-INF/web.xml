@@ -46,13 +46,23 @@
 		<servlet-name>Another</servlet-name>
 		<url-pattern>/Another</url-pattern>
 	</servlet-mapping>
-	<servlet>
+	<!-- <servlet>
 		<servlet-name>surveyQues</servlet-name>
-		<jsp-file>/surveyQuestions.jsp</jsp-file>
+		<jsp-file>surveyQuestions.jsp</jsp-file>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>surveyQues</servlet-name>
 		<url-pattern>/survey</url-pattern>
+	</servlet-mapping> -->
+	<servlet>
+		<description>
+		</description>
+		<display-name>Temporary</display-name>
+		<servlet-name>Temporary</servlet-name>
+		<servlet-class>com.eg.Temporary</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Temporary</servlet-name>
+		<url-pattern>/tmp</url-pattern>
 	</servlet-mapping>
-
 </web-app>

@@ -1,29 +1,53 @@
 package com.core;
 
 public class BeanAnswers {
-private String ans1, ans2, ans3;
+	private String first, second, third, fourth, fifth, employeeId;
 
-public String getAns1() {
-	return ans1;
-}
+	public String getFirst() {
+		return first;
+	}
 
-public void setAns1(String ans1) {
-	this.ans1 = ans1;
-}
+	public void setFirst(String first) {
+		this.first = first;
+	}
 
-public String getAns2() {
-	return ans2;
-}
+	public String getSecond() {
+		return second;
+	}
 
-public void setAns2(String ans2) {
-	this.ans2 = ans2;
-}
+	public void setSecond(String second) {
+		this.second = second;
+	}
 
-public String getAns3() {
-	return ans3;
-}
+	public String getThird() {
+		return third;
+	}
 
-public void setAns3(String ans3) {
-	this.ans3 = ans3;
-}
+	public void setThird(String third) {
+		this.third = third;
+	}
+
+	public String getFourth() {
+		return fourth;
+	}
+
+	public void setFourth(String fourth) {
+		this.fourth = fourth;
+	}
+
+	public String getFifth() {
+		return fifth;
+	}
+
+	public void setFifth(String fifth) {
+		this.fifth = fifth;
+	}
+
+	public String getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(String employeeId) {
+		this.employeeId = employeeId;
+	}
 }
