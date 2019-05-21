@@ -20,7 +20,7 @@ public class Temporary extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		BeanAnswers ba = new BeanAnswers();
-		System.out.println(ba.getEmployeeId() + ba.getFirst());
+		//System.out.println(ba.getEmployeeId() + ba.getFirst());
 		System.out.println(this.getServletContext().getAttribute("nam"));
 		Connection con = (Connection) this.getServletContext().getAttribute("dbconnection");
 		try {

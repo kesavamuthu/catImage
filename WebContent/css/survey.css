@@ -12,7 +12,7 @@ img{
   height: 100px;
 }
 div{
-  width: 90%;
+  width: 100%;
   margin: 20px 2px;
 }
 .outer{
@@ -20,4 +20,9 @@ div{
   width: 60%;
   margin: auto;
   text-align: center;
+}
+.ques{
+	position: relative;
+	bottom: 67px;
+	left: 75px;
 }

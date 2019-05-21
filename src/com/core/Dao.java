@@ -6,10 +6,10 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Dao {
-	public static boolean valueSetter(Connection con, int id, String name, int mobno) {
+	public static boolean valueSetter(Connection con, String id, String name, int mobno) {
 		try {
 			PreparedStatement ps = con.prepareStatement("insert into detailsForSurveyDetails values (?, ?, ?)");
-			ps.setInt(1, id);
+			ps.setString(1, id);
 			ps.setString(2, name);
 			ps.setInt(3, mobno);
 

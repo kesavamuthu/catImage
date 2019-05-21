@@ -1,10 +1,18 @@
 package com.core;
 
 public class BeanAnswers {
-	private String first, second, third, fourth, fifth, employeeId;
-
+	private String first = "", second = "", third = "", fourth = "", fifth = "";
+	private String employeeId;
 	public String getFirst() {
 		return first;
+	}
+
+	public String getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(String employeeId) {
+		this.employeeId = employeeId;
 	}
 
 	public void setFirst(String first) {
@@ -43,11 +51,4 @@ public class BeanAnswers {
 		this.fifth = fifth;
 	}
 
-	public String getEmployeeId() {
-		return employeeId;
-	}
-
-	public void setEmployeeId(String employeeId) {
-		this.employeeId = employeeId;
-	}
 }
