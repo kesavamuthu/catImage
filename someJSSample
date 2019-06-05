@@ -1,0 +1,24 @@
+function allDataCollector(){
+var forms = document.forms[0];
+var empName = forms.empname.value;
+var dOB = forms.dob.value;
+var skills = arrayPusher(forms.skills, false);
+var position = forms.position.value;
+var hobbies = arrayPusher(forms.hobby, true);
+var gender = forms.gender.value;
+var otherdetails = forms.otherdetails.value;
+//console.log(dOB + skills + position + hobbies + gender + otherdetails);
+disabler(true);
+}
+
+function arrayPusher(input, condition){
+	var arr = [];
+	for(var i = 0; i < input.length; ++i)
+		if(condition && input[i].checked)
+			arr.push(input[i].value);
+		else
+			if(input[i].selected)
+			arr.push(input[i].value); 
+	return arr;
+			
+}
